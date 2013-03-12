@@ -1,0 +1,29 @@
+﻿========================================================================
+INSTALL.txt - 26.11.2010 - Dag Robøle
+========================================================================
+
+SERTIFIKAT:
+
+Installer sertifikatet NRPA-IKT.cer under:
+
+	- Klarerte rotsertifiseringsinstanser
+	- Klarerte utgivere
+	(- Mellomliggende rotsertifiseringsinstanser)
+
+========================================================================
+
+INSTALLASJON FOR CURRENT USER (SILENT):
+
+"C:\Program Files\common files\microsoft shared\vsto\10.0\vstoinstaller.exe" /i "W:\MS\Word\maler2010\NRPA.vsto" /s
+
+Kommandoen over vil oppdatere hvis ny versjon er kopiert ut.
+Kommandoen over vil droppe installasjon hvis siste versjon allerede er installert.
+ERROR koder: http://msdn.microsoft.com/en-us/library/bb757423.aspx
+
+========================================================================
+
+AVINSTALLASJON (SILENT):
+
+"C:\Program Files\common files\microsoft shared\vsto\10.0\vstoinstaller.exe" /u "W:\MS\Word\maler2010\NRPA.vsto" /s
+
+========================================================================

@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolNorwegian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="toolEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="toolSelectLang.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btnEditCaseHandler.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVDhPhVPLSsNQEO2iPr6hO8EPEL/D4neIH9LSLgqN
+        tuBarKYWF0kL+gOaBwgmYAquXLSlUkSDuDx6Rm+8Ta40MMydSebMmZO5pZL2jHZ20S1v4P7b6/mV5+Mz
+        F3anlRXb5XW0201YloVGpy5etwv7fLlB46iLKArBwnBtUzxjL06QjItGsCVWzZMrxMGdFMZbFfH2sIfT
+        /gjuwIHrOmBXGgELAEy8jUMZ4bmyLQD8MEymks+zKABwBD++lUIKSO94l+i5N9JdNyMDAvCFrgHjx8kr
+        ZrNpZmTE2MiAVHUAP/DhDwcQr51XakAdaOz0Of+x9zTNWExfPswM5k8T9A8O4exV0aruS9coePhj8MvE
+        OAJn4rwcgx0Xi1i6ppopLZgraMCtUwJx7tBzYF970t0EYtwDdlUgnFMxyGvA2AigL43+69SZbLgP/2rA
+        35MvpLAmsAID7jiTtXotu3W8oflbqMfqMn0BWZJj24xJm2MAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnShowLawInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVDhPjVNBDoMgEPT/72hqaz1Z2kM/or4AUs6VmJDQ
+        DslsqcECCZF12ZmddWymeQq1u8ktFHvvixv3qgHcaiOgdUaAZz2WAbR9xYLu1galrkH1Rzmfu1MYhj5u
+        5HinSSWQGZdrZAFIABa7SBFYAGCMDgDFk3EK/AOwTSBmMaThDBLMhWStenw7SBnYAQvdU8tAUUypux0Q
+        IG2fBNatIrUIkNOObih3FwCfKJ1BOtCqDoCMIvqCrHEmuQ62/wIMRCdyYJTDGPkoIbdkiB82emFr7b8A
+        lFBy424HsDKS9D5jSMM7xofLPbwBt+xCB/+xi2oAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnMalCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="lblTemplatesInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 13</value>
+  </data>
+  <data name="lblTemplatesInfo.Text" xml:space="preserve">
+    <value>Choose a template and press Ok</value>
+  </data>
+  <data name="rbDecisionNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="rbDecisionNote.Text" xml:space="preserve">
+    <value>Decision note</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhVwBSAIcAAAAAAICAgIAAAICAAACAAACAgAAAgIAAgICAQABAQACA/wBAgEAA/4BAAP///8DA
+        wP8AAP//AAD/AAD//wAA//8A////gAD/gID//4CA//8AgP+AQGxsbH5+fpGRkaOjo76+vsfHx9nZ2ezs
+        7GwAAH4AbJEAfqMAkb4Ao8cAvqAAAAB/uhwAANgAW7gAW/9/uLz//yYAW2x/t5gAXQoAAAEAAAAAAKQA
+        ABIAW2MAAJi/9woAAAEAAAAAAC8AAD+E7NAAACMAWwC/928AAOUAAnm/+Qy/9/QAAC4AWy+/9wCE7OwA
+        AABab0YAAEoAAC4AAicAAD8AAAABJz9ab1ABJ0c7+gAABAAAALca+QAAAAAAAQAAChA7+gAAADwAAP95
+        01Bab0c8QW///wAAAD9ab4zhuAMAALca+Q+C5wAAAAEAAJgACgABPwAACFkXJxR/t5QAWwcAW/9/uKD/
+        /+IAWxR/t6wAW8IAW/9/uLj//7AAWxR/t8QAWzUAW/9/uND//2EAWxQAQdwAW24AW/8AQej//8EAWxQA
+        QfQAW9wAW/8AQQD//xgAWxQAQfQAWyUAW/8AQQD//5wAWxEAQQEAAAAAAJgAAAF/ugAAAAAAAAAAAOwA
+        AAEBEgAAAAAAAAAAAACAGwAAAAUAAAAAAAAAAAAAAAAAAEwAAJgAAAAAAHQAAAAAXQUAAAMAAOAAAAQA
+        XbQAAEAAWwAAAMwAACYAXQgACPgAEQAAXfIAAAB/uAAAAMgAAAB/uwAAAHMAAHlzbC40YgBwbVICC5gB
+        +BEAAAQAAAAAAAAAAAAAAAAAAKAAAAF/upwAAFgAWwAAW/9/uDz//yYAW+x/tzAAXYQAAABgOAFb8FCH
+        JABbcAFgOFCHMJgBFwAFFAIAAAAEkr4AAAAAAAFgOACHcgCHWgAAAAAAAcAAAGYAARd/UHB/Uy9b926H
+        oGQBFwABL8AAAKAAAZAAAPAAAPcAAQEAAHAAAAAAAHABL/AAXaoAABd/UPB/U+55Kb5gvuwFjz8RrPoo
+        BiH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAD/ACwAAAAAVwBSAAAI/wD/CRxIsKDBg/88dPiAUOFChBAj
+        SpxIsSEHDhA7cOjgoaLHjyAzcugo4mCHDv9EjAjJsiXFkwJLGoT5b4RMlzhz/qM5YmXBDx1TUvTAUKfR
+        gjx9FiRaU6lFlEej/gM68CZBmD0lavRgVWpOpkKXbmyqFWVWrzpphh24lWxErE7RtqSKMGlEDxtFOIgr
+        lyXYtTuhAp45coSDrn1DqhVYVC3igXjN8k0McjHdxYGLsh3plrLfsQYjE/xw0oNDoKDPelbM2SDpoK5L
+        t9U7efVEzCHp1nxsu2zv33UFAx8uenjCk8gfysXb2rND5BeTC5fKHPZy6BuTW+98tLpn0si3F/+kTf2i
+        +IkqU/asDVKlg8NS21JUuf69+54y03ukb3gvb5e4GUTfe+vZFJNACn1gmAj/xdQTgfihVdxBA+5loEge
+        nMWbexY2mFZz40HooUAnkSdRhKsFKNCCH53EokQjdgeagHtV1oFqMNomX4jweRQZjpBpdqBzMxb0okdb
+        AcmYeDFCdhJQ0kWJ3XkDCfmSZA1Z2eRJ0SmUnZTSUbnkc8lZyRaWB+m2InsEZReUmjmBFyaZ0KF50F9D
+        amXcVGDC9iSemDW5HkH8FVjgauA59FyR3EG0HoMPWmjoo78BJSdHAoZE6V1mOjgpm0ad5pWKhn0KqaFR
+        JSpqWtMNpKSrhjL/SCiquZWGJ0ukgprmipLaVChIcCrW6po2EmvkoFoemimAwzYqUXGvnmmkpLI6WONc
+        VEZbV2vaTmhsVRxe2NKt314Z07UmgWjisU2+Nay2JkF15EzTzYuWiu0GVq5Y9eoaJ5XtQsvejimhmxi5
+        zm4bVLTe1tQjZcHm6du+CJp3bG8IIynYqwQX7K9REWt8Ll8N6/XwnlXdJu/JCVlMkL2rZTyVu/t6dzFw
+        DVcppr6deQkiocN1LLJbzGGKUL465Tx0VjZ7Oh7GFtN3l3ItC6fRz6XOLPHBURP432sOucyn0VXVqBu8
+        oXbNMkRy7nxuj2Ch/SFJ9sll8k26IQ2SaHfbil03QWDp3eJIfXvFIWJ2LTcWzOPJ7anXaS78MWtcGeyo
+        r69WiCJE9yneQeEe4ddVqeJOtHl8ha0NLKwoB7duSzS93vqZjPuYmuqtM2Q55RTP7qrgV208ue/Csk68
+        XGo5fnzxvS+fU+y7O//8xsBLH5yD1se3cvXZ/yR591ExpTz4EwElO/k41S5VQAA7
+</value>
+  </data>
+  <data name="rbAccident.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="rbAccident.Text" xml:space="preserve">
+    <value>Accident</value>
+  </data>
+  <data name="rbPress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="rbPress.Text" xml:space="preserve">
+    <value>Press release</value>
+  </data>
+  <data name="rbLeaderMeeting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="rbLeaderMeeting.Text" xml:space="preserve">
+    <value>Leader meeting</value>
+  </data>
+  <data name="rbInternalReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="rbInternalReport.Text" xml:space="preserve">
+    <value>Internal report</value>
+  </data>
+  <data name="rbReference.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 17</value>
+  </data>
+  <data name="rbReference.Text" xml:space="preserve">
+    <value>Commentary</value>
+  </data>
+  <data name="rbNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="rbNote.Text" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="groupTemplateTypes.Text" xml:space="preserve">
+    <value>Document templates</value>
+  </data>
+  <data name="tbNoteHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 69</value>
+  </data>
+  <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 241</value>
+  </data>
+  <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 69</value>
+  </data>
+  <data name="btnNoteBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnNoteCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 310</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 28</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="cbNoteUOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbNoteUOff.Text" xml:space="preserve">
+    <value>Unpublished</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 31</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="groupNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 238</value>
+  </data>
+  <data name="groupNote.Text" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="tabPageNote.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="btnReferenceBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnReferenceCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 199</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 56</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="tbCommentHeading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 196</value>
+  </data>
+  <data name="cbCommentUOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbCommentUOff.Text" xml:space="preserve">
+    <value>Unpublished</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 30</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="groupReference.Text" xml:space="preserve">
+    <value>Commentary</value>
+  </data>
+  <data name="btnInternalReportBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnInternalReportCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="cbInternalReportUOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbInternalReportUOff.Text" xml:space="preserve">
+    <value>Unbublished</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 30</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="groupInternalReport.Text" xml:space="preserve">
+    <value>Internal report</value>
+  </data>
+  <data name="btnLedermoteBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnLedermoteCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="cbLedermoteUOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbLedermoteUOff.Text" xml:space="preserve">
+    <value>Unpublished</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 31</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="groupLedermote.Text" xml:space="preserve">
+    <value>Directors meeting</value>
+  </data>
+  <data name="btnTelefaxBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnTelefaxCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 59</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Page count</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 31</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="btnPressBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnPressCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Case nr.</value>
+  </data>
+  <data name="groupPress.Text" xml:space="preserve">
+    <value>Press release</value>
+  </data>
+  <data name="btnAccidentBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnAccidentCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 108</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Accident type</value>
+  </data>
+  <data name="cbAccidentUOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="cbAccidentUOff.Text" xml:space="preserve">
+    <value>Unpublished</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 31</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Accident</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYVaPPY169hwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiXboAAAAAAAAAAAAAAAAAQ0CY/15ZtX8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhXbmQYly/LWJdugAAAAAAAAAAAD87lf9PS6jIAAAAAGJd
+        ugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY12+iF5aqv8AAAAAZ2O40Dcznf8ZE5P+HRaX/lNP
+        rf9tZ8UlVVGq0GRfvIcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTT6THSESr/xEMi/5GQaf/dnHFtisk
+        nf4tKZz/NjKg/zgzm/1nYr6IAAAAAAAAAAAAAAAAAAAAAAAAAABiXboAcGvCdgQAiP9UULC/Y168Nmlk
+        v4BHQ6D/bmjJHURApv89OKL/Xlm6LgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZApv8fGpn/aGO+fwAA
+        AAB9eMpCTUqZ/wAAAABoY712HxqV/3Vyw3dnYsA3ZF+9NwAAAAAAAAAAAAAAAGpkwS84MKb/KSKf/0xI
+        oL9qZMB/a2bAdkVAoP9pZb3IS0abvxoRlv8wKZj/UU6j/1tWs89dWaz/RkOZ/0NAl/89OpP/Ewqa/wsA
+        m/8+O5n+PDiU/zk0m/8qJJv/NzOc/19at/8gGJr/R0Ghv2hiwzcAAAAAZF/BN2hiwX9pY8J/T0ukdj86
+        o/8EAJj/a2e//wAAAAAAAAAAcGy3d2FcvmZtab7AIRyQ/2hjvncAAAAAAAAAAAAAAAAAAAAAAAAAAGJd
+        ugBjXrR/BwCS/iAXnv5JQ6f/aGO6x21nw79FQJ7/HBiU/hYRjv9EQJ3/Yl62zwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAE1Ir/8KAJz/BgCa/wUAmf8DAJP/DwiW/lRQrMhqZcF/e3vKf2ZkoocAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABzb7m+IBqS/khCsf85M5//YV6tblNPrf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVlGq/2Nfs8hNSqZueXXAdgAAAABaVarOY168kAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRgsNhjXr83Uk6ff2NevH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP8/AAD/fwAA7z8AAOQTAADwAwAA+ScAAPO3AADxgAAAAAMAAPHnAAD4AQAA+A0AAPhf
+        AAD5zwAA+/8AAA==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Document templates</value>
+  </data>
+</root>

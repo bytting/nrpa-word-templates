@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <uhell>
+    <value>1</value>
+    <desc>Atomulykke som kan medføre spredning av radioaktivt materiale</desc>
+  </uhell>
+  <uhell>
+    <value>2</value>
+    <desc>Uhell i industri, forskning eller medisin som kan ha konsekvenser for miljø</desc>
+  </uhell>
+  <uhell>
+    <value>3</value>
+    <desc>Uhell i industri, forskning eller medisin som er begrenset til lokal bedrift</desc>
+  </uhell>
+</root>
