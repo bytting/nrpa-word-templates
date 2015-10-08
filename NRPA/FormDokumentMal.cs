@@ -20,8 +20,8 @@ namespace NRPA
     {        
         ComponentResourceManager resources = new ComponentResourceManager(typeof(FormDokumentMal));        
         private bool initialized = false;
-        private bool loadOk = true;        
-        private bool mIsNorwegianGUILanguage;        
+        private bool loadOk = true;
+        public bool mIsNorwegianGUILanguage = true;
         private string[] requiredFiles = 
         { 
             "W_OffForv.xml", "W_Uhell.xml", "W_Kontakter.xml",
@@ -32,7 +32,7 @@ namespace NRPA
         public FormDokumentMal()
         {
             Thread.CurrentThread.CurrentUICulture = Utils.ciNB;
-            InitializeComponent();        
+            InitializeComponent();            
         }        
 
         public DocumentInfo DocInfo
@@ -42,7 +42,7 @@ namespace NRPA
 
         private void FormBrevmal_Load(object sender, EventArgs e)
         {
-            tabs.HideTabs = true;            
+            //tabs.HideTabs = true;            
             
             foreach (string file in requiredFiles)
             {
@@ -248,7 +248,7 @@ namespace NRPA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke fortsette", "Feil");
+                MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke fortsette\n\n" + ex.Message, "Feil");                
                 return;
             }
             
@@ -270,7 +270,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_OffForv.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke fortsette", "Feil");
                 return;
@@ -443,7 +443,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_Kontakter.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_Kontakter.xml] mislyktes. Kan ikke fortsette", "Feil");
                 return;
@@ -493,7 +493,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_Uhell.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_Uhell.xml] mislyktes. Kan ikke fortsette", "Feil");
                 return;
@@ -575,7 +575,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_Uhell.xml");                
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_Uhell.xml] mislyktes. Kan ikke fortsette", "Feil");
                 return;

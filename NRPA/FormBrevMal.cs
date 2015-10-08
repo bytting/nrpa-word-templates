@@ -189,11 +189,11 @@ namespace NRPA
         }
 
         private void toolNorwegian_Click(object sender, EventArgs e)
-        {
+        {            
             bool uoff_enabled = cboxUoff.Enabled;
             bool forv_enabled = cboxForv.Enabled;
 
-            changeLanguage(this, Utils.ciNB);            
+            changeLanguage(this, Utils.ciNB);       
             this.Text = "Brevmal";
             Utils.formContact.setNorwegianLang();
             Utils.formOffForv.CancelCaption = "Lukk";
@@ -205,19 +205,17 @@ namespace NRPA
             btnReferanseformat.Text = "Referanseformat";
             btnOffentlighetsloven.Text = "Offentlighetsloven";
             btnForvaltningsloven.Text = "Forvaltningsloven";
-
-            toolSelectLang.Image = toolNorwegian.Image;
-            toolSelectedLang.Text = toolNorwegian.Text;
-
+            
+            toolSelectedLang.Text = "Norsk";
             mIsNorwegianGUILanguage = true;
             loadNorwegianToolTips();            
 
             cboxUoff.Enabled = uoff_enabled;
-            cboxForv.Enabled = forv_enabled;
+            cboxForv.Enabled = forv_enabled;            
         }
 
         private void toolNorwegian2_Click(object sender, EventArgs e)
-        {
+        {            
             bool uoff_enabled = cboxUoff.Enabled;
             bool forv_enabled = cboxForv.Enabled;
 
@@ -233,19 +231,17 @@ namespace NRPA
             btnReferanseformat.Text = "Referanseformat";
             btnOffentlighetsloven.Text = "Offentlighetsloven";
             btnForvaltningsloven.Text = "Forvaltningsloven";
-
-            toolSelectLang.Image = toolNorwegian2.Image;
-            toolSelectedLang.Text = toolNorwegian2.Text;
-
+            
+            toolSelectedLang.Text = "Nynorsk";
             mIsNorwegianGUILanguage = true;
             loadNorwegian2ToolTips();
 
             cboxUoff.Enabled = uoff_enabled;
-            cboxForv.Enabled = forv_enabled;
+            cboxForv.Enabled = forv_enabled;             
         }
 
         private void toolEnglish_Click(object sender, EventArgs e)
-        {
+        {            
             bool uoff_enabled = cboxUoff.Enabled;
             bool forv_enabled = cboxForv.Enabled;
 
@@ -261,20 +257,20 @@ namespace NRPA
             btnReferanseformat.Text = "Reference format";
             btnOffentlighetsloven.Text = "Law of publications";
             btnForvaltningsloven.Text = "Law of trust";
-            
-            toolSelectLang.Image = toolEnglish.Image;
-            toolSelectedLang.Text = toolEnglish.Text;
-
+                        
+            toolSelectedLang.Text = "English";
             mIsNorwegianGUILanguage = false;
             loadEnglishToolTips();
 
             cboxUoff.Enabled = uoff_enabled;
-            cboxForv.Enabled = forv_enabled;
+            cboxForv.Enabled = forv_enabled;        
         }
 
         private void changeLanguage(Control cc, CultureInfo ci)
         {
-            resources.ApplyResources(cc, cc.Name, ci);
+            if(cc is Label || cc is Button)
+                resources.ApplyResources(cc, cc.Name, ci);
+
             foreach (Control c in cc.Controls)
                 changeLanguage(c, ci);
         }        
@@ -290,7 +286,7 @@ namespace NRPA
                 xml = new XmlDocument();
                 xml.Load(Utils.ResourcePath + "W_Kontakter.xml");                
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_Kontakter.xml] mislyktes. Kan ikke laste inn kontakter", "Feil");
                 return;
@@ -317,7 +313,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_OffForv.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer", "Feil");
                 return;
@@ -343,7 +339,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_OffForv.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer", "Feil");
                 return;
@@ -436,12 +432,7 @@ namespace NRPA
             mLetterInfo.attachment = !String.IsNullOrEmpty(tbAttachments.Text.Trim());
             mLetterInfo.copy = !String.IsNullOrEmpty(tbCopies.Text.Trim());
             mLetterInfo.uoff = !String.IsNullOrEmpty(cboxUoff.Text.Trim());
-        }                                                
-
-        private void cboxUoff_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-            loadForv(ref cboxForv, cboxUoff.Text);
-        }
+        }                                                        
 
         private void cboxSignature_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -481,39 +472,7 @@ namespace NRPA
                 tbCaseHandlerPhoneDir.Text = mNorwegianPhoneDir;
                 tbCounterSignatureTitle.Text = Utils.formContact.contact.title_english;
             }
-        }                                                                
-
-        private void cboxForv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            XPathDocument doc = null;
-            try
-            {
-                doc = new XPathDocument(Utils.ResourcePath + "W_OffForv.xml");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer", "Feil");
-                return;
-            }
-            
-            string forvlov = cboxForv.Text;                        
-            XPathNavigator nav = doc.CreateNavigator();
-            if (!String.IsNullOrEmpty(forvlov))
-            {
-                XPathNodeIterator iter = nav.Select("/root/off/forv/desc[../value='" + forvlov + "']");
-                if (iter.Count > 0)
-                {
-                    iter.MoveNext();
-                    tooltip.SetToolTip(cboxForv, forvlov + " - " + iter.Current.Value);
-                }
-            }
-            else
-            {
-                if(isNorwegianGUILanguage())
-                    tooltip.SetToolTip(cboxForv, "Velg paragraf fra forvaltningsloven");
-                else tooltip.SetToolTip(cboxForv, "Choose paragraph from the laws of trust");            
-            }
-        }        
+        }                                                                                
 
         private void btnEditCaseHandler_Click(object sender, EventArgs e)
         {
@@ -532,20 +491,17 @@ namespace NRPA
                 if (c.default_language != lang)
                 {
                     if (c.default_language == "English")
-                    {
-                        toolEnglish_Click(null, null);
+                    {                    
                         int idx = cboxDocumentLang.FindStringExact("English");
                         cboxDocumentLang.SelectedIndex = (idx >= 0) ? idx : 0;
                     }
                     else if (c.default_language == "Norsk - Bokmål")
-                    {
-                        toolNorwegian_Click(null, null);
+                    {                    
                         int idx = cboxDocumentLang.FindStringExact("Norsk - Bokmål");
                         cboxDocumentLang.SelectedIndex = (idx >= 0) ? idx : 0;
                     }
                     else
-                    {
-                        toolNorwegian2_Click(null, null);
+                    {                        
                         int idx = cboxDocumentLang.FindStringExact("Norsk - Nynorsk");
                         cboxDocumentLang.SelectedIndex = (idx >= 0) ? idx : 0;
                     }
@@ -592,6 +548,11 @@ namespace NRPA
         private void btnReferanseformat_Click(object sender, EventArgs e)
         {
             tbOurReference.Text = DateTime.Now.Year.ToString() + mRefFormat;
+        }
+
+        private void cboxUoff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadForv(ref cboxForv, cboxUoff.Text);
         }                
     }
 }

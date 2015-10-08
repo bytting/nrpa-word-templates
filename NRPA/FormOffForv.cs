@@ -52,7 +52,7 @@ namespace NRPA
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer", "Feil");
+                MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer\n\n" + ex.Message, "Feil");
                 return;
             }
 
@@ -91,7 +91,7 @@ namespace NRPA
             {
                 doc = new XPathDocument(Utils.ResourcePath + "W_OffForv.xml");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Åpning av filen [" + Utils.ResourcePath + "W_OffForv.xml] mislyktes. Kan ikke laste inn lovparagrafer", "Feil");
                 return;

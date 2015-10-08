@@ -49,7 +49,7 @@ namespace NRPA
                         File.Copy(sharedFile, localFile, true);
                     }
                 }
-            }            
+            }           
         }        
 
         private void btnDocTemplates_Click(object sender, RibbonControlEventArgs e)
@@ -321,7 +321,7 @@ namespace NRPA
                     txt_attachment = "Vedlegg: ",
                     txt_copy = "Kopi: ",
                     //our_date = DateTime.Now.ToString("d", Utils.ciNB),
-                    our_date = DateTime.Now.ToString("yyyy-MM-dd"),
+                    our_date = DateTime.Now.ToString("dd.MM.yyyy"),
                     signature_title = info.signature.title;
 
                 switch(info.DocumentLanguage.ToLower().Trim())

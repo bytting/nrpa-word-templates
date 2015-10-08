@@ -78,7 +78,7 @@ namespace NRPA
                 mContact.title_english = reader.ReadLine();
                 mContact.default_language = reader.ReadLine();
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }
@@ -108,7 +108,7 @@ namespace NRPA
                 writer.WriteLine(mContact.title_english);
                 writer.WriteLine(mContact.default_language);
             }
-            catch (Exception ex)
+            catch
             {                
                 return false;
             }
